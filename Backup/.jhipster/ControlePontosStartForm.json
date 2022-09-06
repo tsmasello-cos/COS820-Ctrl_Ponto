@@ -1,0 +1,25 @@
+{
+  "fields": [
+    {
+      "fieldName": "Funcionario",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "EscolhaProcesso",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [],
+  "entityType": "start-form",
+  "processBpmnId": "ControlePontosProcess",
+  "processEntityName": "ControlePontosProcess",
+  "domainEntityName": "ControlePontos",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "name": "ControlePontosStartForm",
+  "changelogDate": "20220905000002",
+  "skipFakeData": true
+}

@@ -1,0 +1,34 @@
+{
+  "fields": [
+    {
+      "fieldName": "Nome",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "CPF",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "Cargo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "Ativo",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "HorasDiarias",
+      "fieldType": "Float"
+    }
+  ],
+  "relationships": [],
+  "entityType": "domain",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": true,
+  "pagination": "no",
+  "name": "Funcionario",
+  "changelogDate": "20220905000001",
+  "skipFakeData": true
+}
