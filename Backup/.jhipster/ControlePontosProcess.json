@@ -1,0 +1,35 @@
+{
+  "fields": [
+    {
+      "fieldName": "DataHoraAlteracao",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "Funcionario",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "EscolhaProcesso",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipName": "controleParaFuncionario",
+      "otherEntityName": "funcionario",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "CPF"
+    }
+  ],
+  "entityType": "process-binding",
+  "processBpmnId": "ControlePontosProcess",
+  "domainEntityName": "ControlePontos",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "name": "ControlePontosProcess",
+  "changelogDate": "20220905000002",
+  "skipFakeData": true
+}

@@ -1,0 +1,25 @@
+{
+  "fields": [
+    {
+      "fieldName": "DataHoraMarcacao",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipName": "pontoParaFunc",
+      "otherEntityName": "funcionario",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "CPF"
+    }
+  ],
+  "entityType": "domain",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": true,
+  "pagination": "no",
+  "name": "Ponto",
+  "changelogDate": "20220905000001",
+  "skipFakeData": true
+}
