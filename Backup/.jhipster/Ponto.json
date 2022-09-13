@@ -10,7 +10,7 @@
       "relationshipName": "pontoParaFunc",
       "otherEntityName": "funcionario",
       "relationshipType": "many-to-one",
-      "otherEntityField": "CPF"
+      "otherEntityField": "cpf"
     }
   ],
   "entityType": "domain",

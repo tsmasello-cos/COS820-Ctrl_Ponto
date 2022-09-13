@@ -5,20 +5,16 @@
       "fieldType": "LocalDate"
     },
     {
-      "fieldName": "funcionario",
-      "fieldType": "String"
-    },
-    {
       "fieldName": "escolhaProcesso",
       "fieldType": "Integer"
     }
   ],
   "relationships": [
     {
-      "relationshipName": "controleParaFuncionario",
+      "relationshipName": "funcionario",
       "otherEntityName": "funcionario",
       "relationshipType": "many-to-one",
-      "otherEntityField": "CPF"
+      "otherEntityField": "cpf"
     }
   ],
   "entityType": "domain",
