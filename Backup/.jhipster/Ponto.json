@@ -1,7 +1,7 @@
 {
   "fields": [
     {
-      "fieldName": "DataHoraMarcacao",
+      "fieldName": "dataHoraMarcacao",
       "fieldType": "LocalDate"
     }
   ],

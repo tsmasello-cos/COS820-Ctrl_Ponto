@@ -1,23 +1,23 @@
 {
   "fields": [
     {
-      "fieldName": "Nome",
+      "fieldName": "nome",
       "fieldType": "String"
     },
     {
-      "fieldName": "CPF",
+      "fieldName": "cpf",
       "fieldType": "String"
     },
     {
-      "fieldName": "Cargo",
+      "fieldName": "cargo",
       "fieldType": "String"
     },
     {
-      "fieldName": "Ativo",
+      "fieldName": "ativo",
       "fieldType": "Boolean"
     },
     {
-      "fieldName": "HorasDiarias",
+      "fieldName": "horasDiarias",
       "fieldType": "Float"
     }
   ],

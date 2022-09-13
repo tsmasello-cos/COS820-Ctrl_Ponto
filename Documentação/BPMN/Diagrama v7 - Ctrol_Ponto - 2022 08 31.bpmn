@@ -7,18 +7,18 @@
     <bpmn:startEvent id="StartEvent_1">
       <bpmn:outgoing>Flow_1934eg6</bpmn:outgoing>
     </bpmn:startEvent>
-    <bpmn:userTask id="Activity_0uyoneb" name="Escolher Funcionário">
+    <bpmn:userTask id="EscolherFuncionario" name="Escolher Funcionário">
       <bpmn:incoming>Flow_1934eg6</bpmn:incoming>
       <bpmn:outgoing>Flow_1wt0xhh</bpmn:outgoing>
     </bpmn:userTask>
-    <bpmn:sequenceFlow id="Flow_1934eg6" sourceRef="StartEvent_1" targetRef="Activity_0uyoneb" />
+    <bpmn:sequenceFlow id="Flow_1934eg6" sourceRef="StartEvent_1" targetRef="EscolherFuncionario" />
     <bpmn:exclusiveGateway id="Gateway_16d0jdk">
       <bpmn:incoming>Flow_1wt0xhh</bpmn:incoming>
       <bpmn:outgoing>Flow_09emjlp</bpmn:outgoing>
       <bpmn:outgoing>Flow_0lxy8dw</bpmn:outgoing>
       <bpmn:outgoing>Flow_0rm1fak</bpmn:outgoing>
     </bpmn:exclusiveGateway>
-    <bpmn:sequenceFlow id="Flow_1wt0xhh" sourceRef="Activity_0uyoneb" targetRef="Gateway_16d0jdk" />
+    <bpmn:sequenceFlow id="Flow_1wt0xhh" sourceRef="EscolherFuncionario" targetRef="Gateway_16d0jdk" />
     <bpmn:sequenceFlow id="Flow_09emjlp" sourceRef="Gateway_16d0jdk" targetRef="Activity_18jko25">
       <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${processInstance.ControlePontos.EscolhaProcesso == 0}</bpmn:conditionExpression>
     </bpmn:sequenceFlow>
@@ -121,7 +121,7 @@
       <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
         <dc:Bounds x="219" y="302" width="36" height="36" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_05qtyu1_di" bpmnElement="Activity_0uyoneb">
+      <bpmndi:BPMNShape id="Activity_05qtyu1_di" bpmnElement="EscolherFuncionario">
         <dc:Bounds x="310" y="280" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Gateway_16d0jdk_di" bpmnElement="Gateway_16d0jdk" isMarkerVisible="true">

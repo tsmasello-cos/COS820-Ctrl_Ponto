@@ -1,15 +1,15 @@
 {
   "fields": [
     {
-      "fieldName": "DataHoraAlteracao",
+      "fieldName": "dataHoraAlteracao",
       "fieldType": "LocalDate"
     },
     {
-      "fieldName": "Funcionario",
+      "fieldName": "funcionario",
       "fieldType": "String"
     },
     {
-      "fieldName": "EscolhaProcesso",
+      "fieldName": "escolhaProcesso",
       "fieldType": "Integer"
     }
   ],

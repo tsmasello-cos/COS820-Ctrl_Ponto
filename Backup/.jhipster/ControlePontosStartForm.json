@@ -1,14 +1,5 @@
 {
-  "fields": [
-    {
-      "fieldName": "Funcionario",
-      "fieldType": "String"
-    },
-    {
-      "fieldName": "EscolhaProcesso",
-      "fieldType": "Integer"
-    }
-  ],
+  "fields": [],
   "relationships": [],
   "entityType": "start-form",
   "processBpmnId": "ControlePontosProcess",

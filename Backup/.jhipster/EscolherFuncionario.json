@@ -1,0 +1,26 @@
+{
+  "fields": [
+    {
+      "fieldName": "cpf",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "escolhaProcesso",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [],
+  "entityType": "user-task-form",
+  "processBpmnId": "ControlePontosProcess",
+  "processEntityName": "ControlePontosProcess",
+  "taskBpmnId": "EscolherFuncionario",
+  "domainEntityName": "ControlePontos",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "skipFakeData": true,
+  "name": "EscolherFuncionario",
+  "changelogDate": "20220912000001"
+}
