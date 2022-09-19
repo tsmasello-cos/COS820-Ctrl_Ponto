@@ -7,7 +7,7 @@
   ],
   "relationships": [
     {
-      "relationshipName": "pontoParaFunc",
+      "relationshipName": "cpfDoFuncionario",
       "otherEntityName": "funcionario",
       "relationshipType": "many-to-one",
       "otherEntityField": "cpf"
@@ -17,7 +17,7 @@
   "service": "serviceClass",
   "dto": "mapstruct",
   "jpaMetamodelFiltering": false,
-  "readOnly": true,
+  "readOnly": false,
   "pagination": "no",
   "name": "Ponto",
   "changelogDate": "20220905000001",

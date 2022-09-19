@@ -1,17 +1,29 @@
 {
   "fields": [
     {
-      "fieldName": "dataHoraAlteracao",
+      "fieldName": "tipoAlteracao",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "alterarDataDe",
       "fieldType": "LocalDate"
     },
     {
-      "fieldName": "escolhaProcesso",
-      "fieldType": "Integer"
+      "fieldName": "alterarDataPara",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "inserirData",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "deletarData",
+      "fieldType": "LocalDate"
     }
   ],
   "relationships": [
     {
-      "relationshipName": "funcionario",
+      "relationshipName": "cpfDoFuncionario",
       "otherEntityName": "funcionario",
       "relationshipType": "many-to-one",
       "otherEntityField": "cpf"

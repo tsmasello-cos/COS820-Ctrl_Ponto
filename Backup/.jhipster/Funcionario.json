@@ -26,7 +26,7 @@
   "service": "serviceClass",
   "dto": "mapstruct",
   "jpaMetamodelFiltering": false,
-  "readOnly": true,
+  "readOnly": false,
   "pagination": "no",
   "name": "Funcionario",
   "changelogDate": "20220905000001",

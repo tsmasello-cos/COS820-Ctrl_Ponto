@@ -1,15 +1,18 @@
 {
   "fields": [
     {
-      "fieldName": "funcionario",
-      "fieldType": "String"
-    },
-    {
-      "fieldName": "escolhaProcesso",
+      "fieldName": "tipoAlteracao",
       "fieldType": "Integer"
     }
   ],
-  "relationships": [],
+  "relationships": [
+    {
+      "relationshipName": "cpfDoFuncionario",
+      "otherEntityName": "funcionario",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "cpf"
+    }
+  ],
   "entityType": "user-task-form",
   "processBpmnId": "ControlePontosProcess",
   "processEntityName": "ControlePontosProcess",
