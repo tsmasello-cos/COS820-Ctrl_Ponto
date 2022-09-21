@@ -1,0 +1,26 @@
+{
+  "fields": [
+    {
+      "fieldName": "alterarDataDe",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "alterarDataPara",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "relationships": [],
+  "entityType": "user-task-form",
+  "processBpmnId": "ControlePontosProcess",
+  "processEntityName": "ControlePontosProcess",
+  "taskBpmnId": "AlterarHora",
+  "domainEntityName": "ControlePontos",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "skipFakeData": true,
+  "name": "AlterarHora",
+  "changelogDate": "20220912000001"
+}
