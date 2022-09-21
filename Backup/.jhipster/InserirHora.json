@@ -1,0 +1,22 @@
+{
+  "fields": [
+    {
+      "fieldName": "inserirData",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "relationships": [],
+  "entityType": "user-task-form",
+  "processBpmnId": "ControlePontosProcess",
+  "processEntityName": "ControlePontosProcess",
+  "taskBpmnId": "InserirHora",
+  "domainEntityName": "ControlePontos",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "skipFakeData": true,
+  "name": "InserirHora",
+  "changelogDate": "20220912000001"
+}

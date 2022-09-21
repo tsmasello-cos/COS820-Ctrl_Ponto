@@ -1,0 +1,22 @@
+{
+  "fields": [
+    {
+      "fieldName": "deletarData",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "relationships": [],
+  "entityType": "user-task-form",
+  "processBpmnId": "ControlePontosProcess",
+  "processEntityName": "ControlePontosProcess",
+  "taskBpmnId": "DeletarHora",
+  "domainEntityName": "ControlePontos",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "skipFakeData": true,
+  "name": "DeletarHora",
+  "changelogDate": "20220912000001"
+}
