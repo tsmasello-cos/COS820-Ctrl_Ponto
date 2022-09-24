@@ -72,6 +72,14 @@ public class RecalcularHoras implements JavaDelegate {
             pontoRepo.save(novoPonto);
         }
 
+        if (tipoAlteracao == 1) { // Alterar Ponto
+        
+        }
+        
+        if (tipoAlteracao == 2) { // Remover Ponto
+        
+        }
+
 
 
 
