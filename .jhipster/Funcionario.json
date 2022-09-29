@@ -19,6 +19,10 @@
     {
       "fieldName": "horasDiarias",
       "fieldType": "Float"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
     }
   ],
   "relationships": [],
