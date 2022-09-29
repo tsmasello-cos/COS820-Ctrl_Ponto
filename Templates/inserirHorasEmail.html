@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:lang="${#locale.language}" lang="en">
+  <head>
+    <title>Resumo da Adição manual de Horas</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+    <p>Prezado <span th:text="${funcionario.nome}">nome</span></p>
+    <p>Aqui está um resumo da operação</p>
+    <ul>
+        <li><b>Hora Adicionada</b>: <span th:text="${controlePonto.inserirData}"></span></li>
+</li>
+    </ul>
+    <p>
+      Atenciosamente,
+      <br />
+      <em>Equipe do Controle de Pontos</em>
+    </p>
+  </body>
+</html>
