@@ -5,7 +5,10 @@ import java.util.Locale;
 import com.mycompany.myapp.service.MailService;
 import com.mycompany.myapp.service.dto.ControlePontosDTO;
 import com.mycompany.myapp.service.dto.ControlePontosProcessDTO;
+
 import com.mycompany.myapp.service.dto.FuncionarioDTO;
+import com.mycompany.myapp.domain.Funcionario;
+import com.mycompany.myapp.repository.FuncionarioRepository;
 
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
@@ -16,6 +19,14 @@ import org.thymeleaf.spring5.SpringTemplateEngine;
 
 @Component
 public class EnviarMensagens implements JavaDelegate {
+    
+    private final FuncionarioRepository funcionarioRepo;
+
+    public EnviarMensagens(
+        FuncionarioRepository funcionarioRepo
+    ) {
+        this.funcionarioRepo = funcionarioRepo;
+    }
 
     @Autowired
     MailService mailService;
@@ -34,8 +45,35 @@ public class EnviarMensagens implements JavaDelegate {
         ControlePontosDTO controlePontos = pi.getControlePontos();
         FuncionarioDTO funcionario = controlePontos.getCpfDoFuncionario();
 
-        String to = funcionario.getEmail();
-        String subject = "[AgileKip] Email padrao " + funcionario.getNome();
+        String to = "";
+        String subject = "";
+
+        for (Funcionario funcionarioObj : funcionarioRepo.findAll()) {
+                
+                System.out.println("+++++++++++++++++++++++");
+                System.out.println("FuncionarioObj: " + funcionarioObj);
+                System.out.println("FuncionarioDTO: " + funcionario);
+                System.out.println("+++++++++++++++++++++++");
+    
+            if (funcionarioObj.getCpf().equals(funcionario.getCpf())) {
+                
+                
+                funcionario.setEmail(funcionarioObj.getEmail());
+                funcionario.setNome(funcionarioObj.getNome());
+
+                to = funcionarioObj.getEmail();                
+                subject = "[AgileKip] Email padrao " + funcionarioObj.getNome();
+
+                System.out.println("+++++++++++++++++++++++");
+                System.out.println("FuncionarioObj: " + funcionarioObj);
+                System.out.println("FuncionarioDTO: " + funcionario);
+                System.out.println("+++++++++++++++++++++++");
+
+                break;
+            } 
+        }
+
+
         Context context = new Context(Locale.getDefault());
         context.setVariable("controlePontos", controlePontos);
         context.setVariable("funcionario", funcionario);
